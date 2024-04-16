@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: white; /* Adjusted for less opacity */
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, .09);
+    box-shadow: 0 0 4px rgba(0,0,0,.18);
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Map container styling */
+#myMap {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 60px); /* Adjusted for navbar height */
+    
+}
+
+/* Search box container styling */
+.search-box-container {
+    position: absolute;
+    top: 100px; /* Adjusted for navbar height */
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 350px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjusted for visibility */
+    border-radius: 8px;
+    z-index: 1000; /* Ensure it's above the map */
+}
+
+/* Search box styling */
+.search-box {
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Search button styling */
+.search-btn {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #0078D4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #005A9E;
+}
